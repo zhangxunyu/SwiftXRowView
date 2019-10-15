@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mSx-wg-ujp" customClass="XSwitchView" customModule="YouLiZhiYu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="229-dq-Dng">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                    <state key="normal" title="Button" image="rent_icon_none"/>
+                    <state key="selected" image="rent_icon_have"/>
+                    <connections>
+                        <action selector="btnEvent:" destination="mSx-wg-ujp" eventType="touchUpInside" id="18K-UN-4oA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="229-dq-Dng" firstAttribute="top" secondItem="e9M-uS-rzx" secondAttribute="top" id="15T-7u-c6k"/>
+                <constraint firstItem="229-dq-Dng" firstAttribute="leading" secondItem="e9M-uS-rzx" secondAttribute="leading" id="Z0K-8j-YuN"/>
+                <constraint firstItem="e9M-uS-rzx" firstAttribute="bottom" secondItem="229-dq-Dng" secondAttribute="bottom" id="a4o-9Q-mcl"/>
+                <constraint firstItem="e9M-uS-rzx" firstAttribute="trailing" secondItem="229-dq-Dng" secondAttribute="trailing" id="wpg-9i-eWx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="e9M-uS-rzx"/>
+            <connections>
+                <outlet property="btn" destination="229-dq-Dng" id="gPf-2x-zCl"/>
+            </connections>
+            <point key="canvasLocation" x="-76.799999999999997" y="-273.91304347826087"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rent_icon_have" width="50" height="25"/>
+        <image name="rent_icon_none" width="50" height="25"/>
+    </resources>
+</document>

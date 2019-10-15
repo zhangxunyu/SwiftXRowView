@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eag-6b-oZY" customClass="XItemRowView" customModule="YouLiZhiYu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4PP-4V-qhQ" customClass="XUnderlineView" customModule="YouLiZhiYu" customModuleProvider="target">
+                    <rect key="frame" x="15" y="0.0" width="426" height="68"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homearrow" translatesAutoresizingMaskIntoConstraints="NO" id="ae5-Qs-n5i">
+                            <rect key="frame" x="257" y="27" width="8" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CKw-3v-Oze">
+                            <rect key="frame" x="111" y="11" width="97" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="房间联系人的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xY-OX-YyZ">
+                            <rect key="frame" x="8" y="24" width="95" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TR-uB-NP7">
+                            <rect key="frame" x="399" y="21" width="27" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rf-LD-9Vw">
+                            <rect key="frame" x="317" y="24" width="39" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="[设置]">
+                                <color key="titleColor" red="0.1843137255" green="0.54901960780000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Rjc-cJ-UMd" firstAttribute="bottom" secondItem="4PP-4V-qhQ" secondAttribute="bottom" id="0sH-rf-aIo"/>
+                <constraint firstItem="Rjc-cJ-UMd" firstAttribute="trailing" secondItem="4PP-4V-qhQ" secondAttribute="trailing" constant="15" id="W5O-1Y-nFY"/>
+                <constraint firstItem="4PP-4V-qhQ" firstAttribute="leading" secondItem="Rjc-cJ-UMd" secondAttribute="leading" constant="15" id="iZx-OA-Sbn"/>
+                <constraint firstItem="4PP-4V-qhQ" firstAttribute="top" secondItem="Rjc-cJ-UMd" secondAttribute="top" id="uIP-3s-K0U"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Rjc-cJ-UMd"/>
+            <connections>
+                <outlet property="arrow" destination="ae5-Qs-n5i" id="7tf-b1-KKW"/>
+                <outlet property="box" destination="4PP-4V-qhQ" id="PF1-wn-oO0"/>
+                <outlet property="title" destination="5xY-OX-YyZ" id="oqF-3d-mel"/>
+                <outlet property="unit" destination="4TR-uB-NP7" id="QtJ-TP-xr8"/>
+                <outlet property="value" destination="CKw-3v-Oze" id="Uop-zg-4PF"/>
+                <outlet property="valueBtn" destination="9Rf-LD-9Vw" id="lju-xV-BT0"/>
+            </connections>
+            <point key="canvasLocation" x="43" y="-116"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="homearrow" width="8" height="14"/>
+    </resources>
+</document>
