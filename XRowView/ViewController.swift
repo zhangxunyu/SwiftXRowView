@@ -10,13 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var lab: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        XRowTool.addIcon(lab, "setting_icon_cache")
+        
+        let rowData = XItemRowData.textRow("普通文本", "有效值")
+        let rowView = XItemRowView.instance(rowData)
+        rowView.offsetY = 100
+        self.view.addSubview(rowView)
+        
+        
+        
         let itemsView = XGroupItemView.instance(oneRowData())
         itemsView.offsetY = 100
-        view.addSubview(itemsView)
+//        view.addSubview(itemsView)
 
         let twoItemsView=XTwoItemView.instance(towRowData(), true)
         twoItemsView.offsetY = 100
