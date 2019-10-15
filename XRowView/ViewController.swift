@@ -14,20 +14,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let rowData = XItemRowData.textRow("普通文本", "有效值")
-        let rowView = XItemRowView.instance(rowData)
-        rowView.offsetY = 100
-        self.view.addSubview(rowView)
+//        let rowData = XItemRowData.textRow("普通文本", "有效值")
+//        let rowView = XItemRowView.instance(rowData)
+//        rowView.offsetY = 100
+//        self.view.addSubview(rowView)
         
         
         
-        let itemsView = XGroupItemView.instance(oneRowData())
-        itemsView.offsetY = 100
+//        let itemsView = XGroupItemView.instance(oneRowData())
+//        itemsView.offsetY = 100
 //        view.addSubview(itemsView)
 
         let twoItemsView=XTwoItemView.instance(towRowData(), true)
         twoItemsView.offsetY = 100
-//        view.addSubview(twoItemsView)
+        view.addSubview(twoItemsView)
     }
     
     func towRowData()->[XItemRowData]{
